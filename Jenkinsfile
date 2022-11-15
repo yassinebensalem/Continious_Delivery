@@ -22,7 +22,7 @@ pipeline
 	stage ('docker'){
 	     steps{
 	         script{
-                     sh "sudo -s"
+                     sh "sudo -S"
 		     sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml" 
                  }
               
